@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>in dãy fibonaci</title>
+</head>
+<body>
+<script>
+    function displayFibo(amount) {
+        let f0 = 1;
+        let f1 = 1;
+        let count =2;
+        let sum = f0 + f1;
+        document.write(+f0 + " - " + f1);
+        while (count < amount) {
+            let f2 = f0 + f1;
+            document.write (" - "+f2);
+            count++;
+            sum +=f2;
+            f0 = f1;
+            f1 = f2;
+        }
+    }
+    let num = +prompt("Nhập số lượng số Fibo:");
+    displayFibo(num);
+
+</script>
+</body>
+</html>
